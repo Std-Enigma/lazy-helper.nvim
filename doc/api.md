@@ -1,15 +1,15 @@
 # Lua API
 
-lazy.utils API documentation
+lazy-helper API documentation
 
-## mapper
+## lazy.helper
 
-This module can be loaded with `local lazy_utils = require "lazy.utils"`
+This module can be loaded with `local lazy_helper = require "lazy.helper"`
 
 ### get_plugin
 
 ```lua
-function lazy_utils.get_plugin(plugin: string)
+function lazy_helper.get_plugin(plugin: string)
   -> available: LazyPlugin?
 ```
 
@@ -22,7 +22,7 @@ _return_ `available` — The found plugin spec from Lazy
 ### is_available
 
 ```lua
-function lazy_utils.is_available(plugin: string)
+function lazy_helper.is_available(plugin: string)
   -> available: boolean
 ```
 
@@ -35,7 +35,7 @@ _return_ `available` — Whether the plugin is available
 ### load_plugin_with_func
 
 ```lua
-function lazy_utils.load_plugin_with_func(plugin: string, module: table, funcs: string|string[])
+function lazy_helper.load_plugin_with_func(plugin: string, module: table, funcs: string|string[])
 ```
 
 A helper function to wrap a module function to require a plugin before running
@@ -49,7 +49,7 @@ _param_ `funcs` — The functions to wrap in the given module (e.g. `"ui", "sele
 ### on_load
 
 ```lua
-function lazy_utils.on_load(plugins: string|string[], load_op: string|fun()|string[])
+function lazy_helper.on_load(plugins: string|string[], load_op: string|fun()|string[])
 ```
 
 Execute a function when a specified plugin is loaded with Lazy.nvim, or immediately if already loaded
@@ -61,7 +61,7 @@ _param_ `load_op` — the function to execute when the plugin is loaded, a plugi
 ### plugin_opts
 
 ```lua
-function lazy_utils.plugin_opts(plugin: string)
+function lazy_helper.plugin_opts(plugin: string)
   -> opts: table
 ```
 
