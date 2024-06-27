@@ -1,4 +1,4 @@
----@class LazyUtils
+---@class LazyHelper
 local M = {}
 
 --- Get a plugin spec from lazy
