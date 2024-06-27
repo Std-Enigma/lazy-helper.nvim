@@ -1,4 +1,4 @@
-# 💤 lazy-utils.nvim
+# 💤 lazy-helper.nvim
 
 Utilities for [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
@@ -6,7 +6,7 @@ Utilities for [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
 ```lua
 {
-  "Std-Enigma/lazy-utils.nvim",
+  "Std-Enigma/lazy-helper.nvim",
   lazy = true, -- load whenever needed since this is a helper library
 }
 ```
@@ -17,7 +17,7 @@ Utilities for [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
 ## 💡 API
 
-**LazyUtils** provides a Lua API with helper functions. This can be viewed with `:h lazy-utils` or in the repository at [doc/api.md](doc/api.md)
+**LazyHelper** provides a Lua API with helper functions. This can be viewed with `:h lazy-utils` or in the repository at [doc/api.md](doc/api.md)
 
 ## ⭐ Credits
 
