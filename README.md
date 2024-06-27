@@ -1,4 +1,4 @@
-# 💤 lazy-helper.nvim
+# 💤 LazyHelper
 
 Utilities for [lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager.
 
